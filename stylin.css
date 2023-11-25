@@ -1,0 +1,491 @@
+html{
+    min-height: 100%;
+    min-width: 100%;
+    box-sizing: border-box;
+    background-image: url(images/face.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+}
+@media only screen and (width: 425px) {
+    .work .placeholders {
+        padding-left: 20%;
+    }
+}
+
+@media only screen and (width: 375px) {
+    .work .placeholders {
+        padding-left: 20%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
+    .welcome {
+        display: none;
+    }
+
+    .introduction h2 {
+        font-size: 2rem;
+    }
+}
+header {
+    color: BLACK;
+    text-align: right;
+    height: 57vw;
+
+}
+@media only screen and (max-width: 1100px) {
+    .introduction h1 {
+        display: none;
+        
+    }
+    html {
+        background-size: auto;
+    }
+    
+    header{
+        height: 800px;
+    }
+}
+
+
+@media only screen and (width: 768px) {
+    .introduction h1 {
+        text-align: center;
+  }
+
+}
+
+body {
+    font-family: 'Poppins';
+    color: BLACK;
+
+}
+body, ul {
+    margin: 15px;
+    padding: 15px;
+}
+
+.container {
+    z-index: 1;
+}
+
+.overlay {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem; /* 1.33, 5.33, 7.33, 8.33*/
+    color: /*rgb(249, 85, 85) */rgb(233, 220, 208);
+    text-shadow: black 1px 1px 9px;
+    background: transparent;
+}
+
+
+    /* .container {
+    position: relative;
+    overflow: hidden;
+    background-size: auto;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    padding: 5.33rem;
+    color: rgb(249, 85, 85)/*#EAE6E5 /*rgb(254, 225, 0)*/;
+    /* text-shadow: black 0px 0px 1px;
+} */
+
+.overlay img {
+    display: block;
+    margin: 0 auto;
+    background-image: url('image/face.jpg');
+    background-size:auto;
+}
+h1 {
+    align-self: flex-start;
+    font-size: 5.33em;
+    letter-spacing: .8rem;
+    text-shadow: red 0px 0px 7.5px;
+}
+
+.about p {
+    font-family: 'Poppins', 'sans-serif';
+    align-self: flex-end;
+    text-shadow: black 0px 0px 9px;
+}
+
+/* nav bar */
+nav {
+    align-self: flex-end;
+}
+nav a {
+    color: /* rgb(241, 130, 139) */ #f700ff /*#EAE6E5/*#EAee/* magenta/*rgb(254, 174, 0); */;
+    text-decoration: underline;
+}
+nav a:visited {
+    color: white; 
+}
+
+nav a:hover {
+    color: rgb(255, 68, 0) ; 
+}
+
+nav a:active {
+    color:  rgb(191, 72, 228) ; /* Set the color for active links (clicked) */
+    
+}
+
+h1 {
+    font-family: 'Tapestry', monospace;
+    font-weight: normal;
+    font-style: normal;
+    color: rgb(254, 174, 0);
+
+}
+
+.placeholders {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+        justify-items: center;
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    
+    }
+    
+.placeholders img {
+        width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        margin-bottom: 10rem;
+    }
+
+/* contact */
+.contactform {
+    background-color: rgb(224, 215, 201);
+    outline: 1px solid #000000;
+    outline-offset: 9px;
+    
+}
+footer {
+    padding-top: 3rem;
+    text-align: center;
+    font-size: 1rem;
+}
+/* private page */
+#private {
+    margin-top: 5rem;
+    outline: 1px solid #000000;
+    outline-offset: 9px;
+}
+
+.font-effect-neon {
+    font-size: 1.6rem;
+    font-family: 'Schoolbell', serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stacked-text {
+    display: flex;
+    align-items: center;
+}
+
+.stacked-text span {
+    letter-spacing: 1rem;
+
+}
+
+.flicker {
+    animation: flicker 8.25s infinite;
+    /* 7s; 10s*/
+}
+
+#private-page {
+    background-color: black;
+
+}
+/* neon animation */
+@keyframes flicker {
+    0% {
+        opacity: 0.7;
+    }
+
+    2.5% {
+        opacity: 1;
+    }
+
+    5% {
+        opacity: 0.8;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    11% {
+        opacity: 0.9;
+    }
+
+    12% {
+        opacity: 1;
+    }
+
+    13% {
+        opacity: 0.6;
+    }
+
+    15% {
+        opacity: 0.9;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    22.5% {
+        opacity: 0.95;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0.9;
+    }
+
+    32.5% {
+        opacity: 0.97;
+    }
+
+    35% {
+        opacity: 1;
+    }
+
+    38% {
+        opacity: 0.8;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    42.5% {
+        opacity: 0.9;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    /*start of flicker*/
+    47.5% {
+        opacity: 0.8;
+    }
+
+    48% {
+        opacity: 0.65;
+    }
+
+    49% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    51% {
+        opacity: 0.3;
+    }
+
+    52.5% {
+        opacity: 0;
+    }
+
+    54% {
+        opacity: 0.7;
+    }
+
+    55.5% {
+        opacity: 0.55;
+    }
+
+    56% {
+        opacity: 0.8;
+    }
+
+    57.5% {
+        opacity: 0.3;
+    }
+
+    58.5% {
+        opacity: 0.5;
+    }
+
+    59% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0.4;
+    }
+
+    61% {
+        opacity: 0;
+    }
+
+    /* power-down*/
+
+    62.5% {
+        opacity: 0.6;
+    }
+
+    63% {
+        opacity: 0.5;
+    }
+
+    65% {
+        opacity: 0.3;
+    }
+
+    /* end of flicker*/
+    70% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    /* faux start-up loop */
+    81% {
+        opacity: 0.5;
+    }
+
+    82.5% {
+        opacity: 0.8;
+    }
+
+    84% {
+        opacity: 0.6;
+    }
+
+    85% {
+        opacity: 0.7;
+    }
+
+    87.5% {
+        opacity: 0;
+    }
+
+    88% {
+        opacity: 0.7;
+    }
+
+    90% {
+        opacity: 0.6;
+    }
+
+    92.5% {
+        opacity: 0.75;
+    }
+
+    95% {
+        opacity: 0.9;
+    }
+
+    97.5% {
+        opacity: 0.6;
+    }
+
+    98% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+}
+
+header {
+    text-align: right;
+}
+
+
+nav ul {
+    list-style-type: none;
+}
+
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+#password {
+    color: magenta;
+}
+
+.hidden-video-container {
+    display: none;
+}
+
+.centered-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+/* sweater */
+body .centered-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.centered-image img {
+    width: 555px;
+    height: auto;
+    animation: bounce 1s infinite;
+}
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5.55px);
+    }
+}
