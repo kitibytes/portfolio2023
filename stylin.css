@@ -56,9 +56,31 @@ header {
 
 }
 
+header {
+    text-align: right;
+}
+
+
+nav ul {
+    list-style-type: none;
+}
+
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
 body {
     font-family: 'Poppins';
     color: BLACK;
+    text-align: center;
 
 }
 body, ul {
@@ -84,33 +106,10 @@ body, ul {
     background: transparent;
 }
 
-
-    /* .container {
-    position: relative;
-    overflow: hidden;
-    background-size: auto;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction:column;
-    justify-content: space-between;
-    padding: 5.33rem;
-    color: rgb(249, 85, 85)/*#EAE6E5 /*rgb(254, 225, 0)*/;
-    /* text-shadow: black 0px 0px 1px;
-} */
-
 .overlay img {
     display: block;
     margin: 0 auto;
-    background-image: url('image/face.jpg');
+    background-image: url('images/face.jpg');
     background-size:auto;
 }
 h1 {
@@ -155,6 +154,12 @@ h1 {
 
 }
 
+ion-icon {
+    color:#000000;
+    font-size: 2.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5 rem;
+}
 .placeholders {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -162,8 +167,7 @@ h1 {
         grid-row-gap: 1rem;
         justify-items: center;
         width: 100%;
-        padding-left: 2rem;
-        padding-right: 2rem;
+
     
     }
     
@@ -176,9 +180,10 @@ h1 {
 
 /* contact */
 .contactform {
-    background-color: rgb(224, 215, 201);
+    background-color: rgb(243, 241, 236);
     outline: 1px solid #000000;
     outline-offset: 9px;
+    text-align: center;
     
 }
 footer {
@@ -189,8 +194,8 @@ footer {
 /* private page */
 #private {
     margin-top: 5rem;
-    outline: 1px solid #000000;
-    outline-offset: 9px;
+    /* outline: 1px solid #000000;
+    outline-offset: 9px; */
 }
 
 .font-effect-neon {
@@ -427,28 +432,6 @@ footer {
         opacity: 0.8;
     }
 }
-
-header {
-    text-align: right;
-}
-
-
-nav ul {
-    list-style-type: none;
-}
-
-
-nav li {
-    display: inline;
-    margin: 0 20px;
-}
-
-
-nav a {
-    text-decoration: none;
-    font-weight: bold;
-}
-
 
 #password {
     color: magenta;
